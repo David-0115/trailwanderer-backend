@@ -1,0 +1,47 @@
+Routes needed:
+
+/auth:  TO DO: Research OAUTH - it may add to or change these.
+
+COMPLETE - POST /login - user login
+
+COMPLETE - POST /register - user registration
+
+COMPLETE - Oauth for google
+            GET /google
+            GET /google/callback
+
+COMPLETE - Oauth for facebook
+            GET /facebook
+            GET /facebook/callback
+
+/users:
+
+COMPLETE - GET /:username - get full user info for profile / other features.
+
+COMPLETE - PATCH /:username - update user info
+
+COMPLETE - DELETE /:username - remove user
+
+COMPLETE - GET /:username/wishlist - get user's trail wishlist
+
+COMPLETE - POST /:username/wishlist/:trailId - add trail to users wishlist
+
+COMPLETE - DELETE /:username/wishlist/:trailId - remove trail from user's wishlist
+
+COMPLETE - GET /:username/completed - get user's completed trails
+
+COMPLETE - POST /:username/completed/:trailId - add trail to user's completed list
+
+COMPLETE - DELETE /:username/completed/:trailId - delete trail from user's completed list
+
+
+/trails:
+
+COMPLETE - GET /search?queryString - search by queryString
+
+COMPLETE - GET /:trailIds
+
+/maps
+
+Need to think through additional routes here and how I want the info
+to display to the user. That'll determine the routes needed...

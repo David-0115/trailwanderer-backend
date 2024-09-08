@@ -1,0 +1,439 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "trailName",
+        "difficulty",
+        "city",
+        "state",
+        "dogs",
+        "description",
+        "features",
+        "landManager",
+        "stats"
+    ],
+    "properties": {
+        "link": {
+            "type": "string",
+            "default": "",
+            "title": "The link Schema",
+            "examples": [
+                "https://www.hikingproject.com/trail/7030481/chestnut-hill-trail"
+            ]
+        },
+        "trailName": {
+            "type": "string",
+            "default": "",
+            "title": "The trailName Schema",
+            "examples": [
+                "Chestnut Hill Trail"
+            ]
+        },
+        "difficulty": {
+            "type": "string",
+            "default": "",
+            "title": "The difficulty Schema",
+            "examples": [
+                "Intermediate"
+            ]
+        },
+        "city": {
+            "type": "string",
+            "default": "",
+            "title": "The city Schema",
+            "examples": [
+                "Pike Creek"
+            ]
+        },
+        "state": {
+            "type": "string",
+            "default": "",
+            "title": "The state Schema",
+            "examples": [
+                "DE"
+            ]
+        },
+        "dogs": {
+            "type": "string",
+            "default": "",
+            "title": "The dogs Schema",
+            "examples": [
+                "Unknown"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "This is the Chestnut Hill Trail , aka the Judge Morris Estate. Years ago, Judge Morris left this plot of land to the state of Delaware as green space. Trail have been on this property since before 1994. The trails are all beautifuly groomed singletrack that are accessible year round. This particular trail has some fun, winding singletrack."
+            ]
+        },
+        "features": {
+            "type": "array",
+            "default": [],
+            "title": "The features Schema",
+            "items": {
+                "type": "string",
+                "title": "A Schema",
+                "examples": [
+                    "Fall Colors",
+                    "Views"
+                ]
+            },
+            "examples": [
+                [
+                    "Fall Colors",
+                    "Views"
+                ]
+            ]
+        },
+        "landManager": {
+            "type": "string",
+            "default": "",
+            "title": "The landManager Schema",
+            "examples": [
+                "Land Manager:DE State Parks - Division of Parks and Rec. Office"
+            ]
+        },
+        "stats": {
+            "type": "object",
+            "default": {},
+            "title": "The stats Schema",
+            "required": [
+                "distance",
+                "type",
+                "elevationHigh",
+                "elevationLow",
+                "elevationGain",
+                "elevationLoss",
+                "avgGrade",
+                "maxGrade"
+            ],
+            "properties": {
+                "distance": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The distance Schema",
+                    "required": [
+                        "imperial",
+                        "metric"
+                    ],
+                    "properties": {
+                        "imperial": {
+                            "type": "number",
+                            "default": 0.0,
+                            "title": "The imperial Schema",
+                            "examples": [
+                                3.5
+                            ]
+                        },
+                        "metric": {
+                            "type": "number",
+                            "default": 0.0,
+                            "title": "The metric Schema",
+                            "examples": [
+                                5.7
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "imperial": 3.5,
+                            "metric": 5.7
+                        }
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "Point to Point"
+                    ]
+                },
+                "elevationHigh": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The elevationHigh Schema",
+                    "required": [
+                        "imperial",
+                        "metric"
+                    ],
+                    "properties": {
+                        "imperial": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The imperial Schema",
+                            "examples": [
+                                282
+                            ]
+                        },
+                        "metric": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The metric Schema",
+                            "examples": [
+                                86
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "imperial": 282,
+                            "metric": 86
+                        }
+                    ]
+                },
+                "elevationLow": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The elevationLow Schema",
+                    "required": [
+                        "imperial",
+                        "metric"
+                    ],
+                    "properties": {
+                        "imperial": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The imperial Schema",
+                            "examples": [
+                                111
+                            ]
+                        },
+                        "metric": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The metric Schema",
+                            "examples": [
+                                34
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "imperial": 111,
+                            "metric": 34
+                        }
+                    ]
+                },
+                "elevationGain": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The elevationGain Schema",
+                    "required": [
+                        "imperial",
+                        "metric"
+                    ],
+                    "properties": {
+                        "imperial": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The imperial Schema",
+                            "examples": [
+                                512
+                            ]
+                        },
+                        "metric": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The metric Schema",
+                            "examples": [
+                                156
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "imperial": 512,
+                            "metric": 156
+                        }
+                    ]
+                },
+                "elevationLoss": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The elevationLoss Schema",
+                    "required": [
+                        "imperial",
+                        "metric"
+                    ],
+                    "properties": {
+                        "imperial": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The imperial Schema",
+                            "examples": [
+                                434
+                            ]
+                        },
+                        "metric": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The metric Schema",
+                            "examples": [
+                                132
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "imperial": 434,
+                            "metric": 132
+                        }
+                    ]
+                },
+                "avgGrade": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The avgGrade Schema",
+                    "required": [
+                        "percent",
+                        "degree"
+                    ],
+                    "properties": {
+                        "percent": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The percent Schema",
+                            "examples": [
+                                5
+                            ]
+                        },
+                        "degree": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The degree Schema",
+                            "examples": [
+                                3
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "percent": 5,
+                            "degree": 3
+                        }
+                    ]
+                },
+                "maxGrade": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The maxGrade Schema",
+                    "required": [
+                        "percent",
+                        "degree"
+                    ],
+                    "properties": {
+                        "percent": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The percent Schema",
+                            "examples": [
+                                23
+                            ]
+                        },
+                        "degree": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The degree Schema",
+                            "examples": [
+                                13
+                            ]
+                        }
+                    },
+                    "examples": [
+                        {
+                            "percent": 23,
+                            "degree": 13
+                        }
+                    ]
+                }
+            },
+            "examples": [
+                {
+                    "distance": {
+                        "imperial": 3.5,
+                        "metric": 5.7
+                    },
+                    "type": "Point to Point",
+                    "elevationHigh": {
+                        "imperial": 282,
+                        "metric": 86
+                    },
+                    "elevationLow": {
+                        "imperial": 111,
+                        "metric": 34
+                    },
+                    "elevationGain": {
+                        "imperial": 512,
+                        "metric": 156
+                    },
+                    "elevationLoss": {
+                        "imperial": 434,
+                        "metric": 132
+                    },
+                    "avgGrade": {
+                        "percent": 5,
+                        "degree": 3
+                    },
+                    "maxGrade": {
+                        "percent": 23,
+                        "degree": 13
+                    }
+                }
+            ]
+        }
+    },
+    "examples": [
+        {
+            "link": "https://www.hikingproject.com/trail/7030481/chestnut-hill-trail",
+            "trailName": "Chestnut Hill Trail",
+            "difficulty": "Intermediate",
+            "city": "Pike Creek",
+            "state": "DE",
+            "dogs": "Unknown",
+            "description": "This is the Chestnut Hill Trail , aka the Judge Morris Estate. Years ago, Judge Morris left this plot of land to the state of Delaware as green space. Trail have been on this property since before 1994. The trails are all beautifuly groomed singletrack that are accessible year round. This particular trail has some fun, winding singletrack.",
+            "features": [
+                "Fall Colors",
+                "Views"
+            ],
+            "landManager": "Land Manager:DE State Parks - Division of Parks and Rec. Office",
+            "stats": {
+                "distance": {
+                    "imperial": 3.5,
+                    "metric": 5.7
+                },
+                "type": "Point to Point",
+                "elevationHigh": {
+                    "imperial": 282,
+                    "metric": 86
+                },
+                "elevationLow": {
+                    "imperial": 111,
+                    "metric": 34
+                },
+                "elevationGain": {
+                    "imperial": 512,
+                    "metric": 156
+                },
+                "elevationLoss": {
+                    "imperial": 434,
+                    "metric": 132
+                },
+                "avgGrade": {
+                    "percent": 5,
+                    "degree": 3
+                },
+                "maxGrade": {
+                    "percent": 23,
+                    "degree": 13
+                }
+            }
+        }
+    ]
+}
